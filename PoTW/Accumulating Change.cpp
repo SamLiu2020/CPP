@@ -30,4 +30,5 @@ int main() {
 
     int totalvalue = valueloonies+valuetoonies+valuequarters;
     cout << "Total Value = " << totalvalue << endl;
+    
 }
