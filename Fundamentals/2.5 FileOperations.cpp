@@ -3,6 +3,14 @@
 using namespace std;
 
 int main() {
-    ofstream fout ("path_to_file/file.out");
+    ofstream fout ("file.out");
+    string str = "String";
+    fout << str;
+    ifstream fin ("file.in");
+    fin >> str;
+    cout << str;
+
+
     
+
 }
