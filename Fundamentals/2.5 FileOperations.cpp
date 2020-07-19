@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int main() {
     ofstream fout ("file.out");
     string str = "String";
