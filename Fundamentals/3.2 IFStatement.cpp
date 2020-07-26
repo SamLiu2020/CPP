@@ -3,12 +3,16 @@ using namespace std;
 int main() {
     cout << endl;
 
-    int number;
-    cin >> number;
-    if ( number == 10) {
-        cout << "True" << endl;
-    } else {
-        cout << "False" << endl;
-    }
+    char charact;
+    cin >> charact;
 
+    if ( charact == 'y' ) {
+        cout << "It's y! " << endl;
+    } else if ( charact == 'n' ) {
+        cout << "It's n!" << endl;
+    } else {
+        cout << "It's something else!" << endl;
+    }
+    
+    return 0;
 }   
