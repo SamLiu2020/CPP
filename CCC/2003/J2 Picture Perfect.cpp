@@ -3,6 +3,9 @@ using namespace std;
 int main() {
     int num;
     cin >> num;
-    cout << "Minimum perimeter is " << num * 2 << " with dimensions " << endl;
+    // lines and lines of code
+    cout << "Minimum perimeter is " << perimeter << "with dimensions" << dimentions << " x " dimentions << endl;
+
+    // how to we get the dimentions and the formula for the perimeter
     return 0;
 }
