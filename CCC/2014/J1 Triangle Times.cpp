@@ -1,20 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-    int Angle1;
-    int Angle2;
-    int Angle3;
+    int angle_1;
+    int angle_2;
+    int angle_3;
 
-    cin >> Angle1;
-    cin >> Angle2;
-    cin >> Angle3;
-    int total = Angle1 + Angle2 + Angle3;
+    cin >> angle_1;
+    cin >> angle_2;
+    cin >> angle_3;
+    int total = angle_1 + angle_2 + angle_3;
 
-    if ((Angle1 == 60) && (Angle2 == 60) && (Angle3 == 60)) {
+    if ((angle_1 == 60) && (angle_2 == 60) && (angle_3 == 60)) {
         cout << "Equilateral" << endl;
-    }  else if (total == 180 && (Angle1 != Angle2 && Angle2 != Angle3 && Angle1 != Angle3)) {
+    }  else if (total == 180 && (angle_1 != angle_2 && angle_2 != angle_3 && angle_1 != angle_3)) {
         cout << "Scalene" << endl;
-    }  else if (total == 180 && ((Angle1 = Angle2) || (Angle2 = Angle3) || (Angle1 = Angle3))) {
+    }  else if (total == 180 && ((angle_1 = angle_2) || (angle_2 = angle_3) || (angle_1 = angle_3))) {
         cout << "Isosceles" << endl;
     }  else if (total != 180) {
         cout << "Error" << endl;
