@@ -13,9 +13,9 @@ int main() {
             length = length - 1;
             width = c/length;
         }
-        cout << "Minimum perimeter is " << length * width << " with dimensions " << length << ' x ' << width << endl;
-    }
-        
+        cout << "Minimum perimeter is " << (length + width)*2 << " with dimensions " << length << " x " << width << endl;
+        break; 
+    } 
 
     return 0;
 }
