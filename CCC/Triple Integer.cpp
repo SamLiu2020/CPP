@@ -5,12 +5,22 @@ int main() {
     cin >> num;
 
     if (num > 100) { 
-        cout << "Please Enter Number Equal To Or Smaller than 100" << endl;
+        do {
+            cout << "Please Enter Number Less Than or Equal to 100" << endl;
+            cin >> num;
+            if (num <= 100) 
+                for (int i = 1; i < num; i++)
+                    for (int j = i+1; j < num; j++)
+                        for (int k = j+1; k < num; k++)
+                            if (i+j+k == num)
+                                cout << i << ' ' << j << ' ' << k << endl;
+        } while (num > 100);
+            
     } else if (num <= 100) 
-    for (int i = 1; i < num; i++)
-        for (int j = i+1; j < num; j++)
-            for (int k = j+1; k < num; k++)
-                if (i+j+k == num)
-                    cout << i << ' ' << j << ' ' << k << endl;
+        for (int i = 1; i < num; i++)
+            for (int j = i+1; j < num; j++)
+                for (int k = j+1; k < num; k++)
+                    if (i+j+k == num)
+                        cout << i << ' ' << j << ' ' << k << endl;
     return 0;
 }
