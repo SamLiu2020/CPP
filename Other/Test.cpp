@@ -1,19 +1,24 @@
-#include <bits/stdc++.h> 
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    unsigned number1;
-    cin >> number1;
-    cout << "number 1 = " << number1 << endl;
-
-    unsigned number2;
-    cin >> number2;
-    cout << "number 2 = " << number2 << endl << endl;
-
-    unsigned number3 = number1 + number2;
-    cout << "answer = " << number3 << endl;
-
-
+    int low, high, rsa_num = 0, divisors;
+    cin >> low >> high;
     
-}   
+    for (int i = low; i <= high; i++) {
+        divisors = 0;
+        for (int j = 1; j <= i; j++) {
+            if ((i&j)== 0) {
+                divisors ++;
+            }
+        }
+        if (divisors == 4)
+        rsa_num ++;
+    }
+    
+    cout << "The number of RSA numbers between " << low << " and " << high << " is " << rsa_num << endl;
+
+    return 0;
+}
+
+
