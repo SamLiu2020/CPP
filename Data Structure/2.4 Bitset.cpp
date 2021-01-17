@@ -1,8 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-    // bitset <48> bits_1 ("0000000000000001");
-    // cout << sizeof(bits_1) << endl;
+    bitset <16> bits_1 ("0000000000000001");
+    cout << sizeof(bits_1) << endl;
+    bits_1.set(28,1);
+    cout << sizeof(bits_1) << endl;
     // bitset <8> bits_2 (2);
     
     // biset <8> bits("11111111")
