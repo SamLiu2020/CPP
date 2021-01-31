@@ -23,10 +23,6 @@ int main() {
             minimum_y = y;
         }
     }
-    int max_x = maximum_x+1;
-    int max_y = maximum_y+1;
-    int min_x = minimum_x-1; 
-    int min_y = minimum_y-1;
-    cout << min_x << "," << min_y << endl;
-    cout << max_x << "," << max_y << endl;   
+    cout << maximum_x+1 << "," << maximum_y+1 << endl;
+    cout << minimum_x-1 << "," << minimum_y-1 << endl;   
 }
