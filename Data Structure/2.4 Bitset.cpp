@@ -1,10 +1,40 @@
 #include <bits/stdc++.h>
 using namespace std;
+void convert_decimal_to_binary(){
+    int x;
+    cin >> x;
+    cout << bitset<8>(x) << endl;
+}
+void convert_bitset_to_string(){
+    int x;
+    cin >> x;
+    string binary_str = bitset<8>(x).to_string();
+    cout << binary_str << endl;
+    cout << binary_str[7] << endl; //ACCESS THE VALUE FROM THE STRING
+}
+void declare_biset_and_ouput(){
+    bitset <8> bits("00000000"); 
+    // bitset <8> bits(0); //Both lines work
+    cout << bits << endl;
+}
+void access_and_iterate_bitset(){
+    int x;
+    cin >> x;
+    cout << bitset<8>(x) [3] << endl;
+    cout << bitset<16>(x) [0] << endl;
+
+}
+
 int main() {
-    bitset <16> bits_1 ("0000000000000001");
-    cout << sizeof(bits_1) << endl;
-    bits_1.set(28,1);
-    cout << sizeof(bits_1) << endl;
+    convert_decimal_to_binary();
+    convert_bitset_to_string();
+    declare_biset_and_ouput();
+    access_and_iterate_bitset();
+
+    // bitset <16> bits_1 ("00000000");
+    // cout << sizeof(bits_1) << endl;
+    // bits_1.set(28,1);
+    // cout << sizeof(bits_1) << endl;
     // bitset <8> bits_2 (2);
     
     // biset <8> bits("11111111")
@@ -17,12 +47,6 @@ int main() {
 
     // bits.reset(0); //0000 0000 -> 0000 0000
 
-    // int x = 5;
-    // cout << bitset<8>(x) << endl;
-    // string binary_str = bitset<8>(x).to_string();
-    // cout << "bits string: " << binary_str << endl;
-    
-    
     // bitset <8> bits_1 ("00000001");
     // bitset <8> bits_2 ("10000001");
     // bitset <8? bits_result;
