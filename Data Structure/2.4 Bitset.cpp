@@ -24,12 +24,28 @@ void access_and_iterate_bitset(){
     cout << bitset<16>(x) [0] << endl;
 
 }
+void left_shift(){
+    int a = 5; 
+    cout << "a = 5, in Binary: " << bitset<8>(a) << endl;
+
+    cout << "a << 1 = " << bitset<8>(a<<1) << endl; // What is the value after left shift?
+    cout << "a << 2 = " << bitset<8>(a<<2) << endl; // What is the value after left shift?
+}
+void right_shift(){
+    int a = 5; 
+    cout << "a = 5, in Binary: " << bitset<8>(a) << endl;
+
+    cout << "a >> 1 = " << bitset<8>(a>>1) << endl; // What is the value after left shift?
+    cout << "a >> 2 = " << bitset<8>(a>>2) << endl; // What is the value after left shift?
+}
 
 int main() {
     convert_decimal_to_binary();
     convert_bitset_to_string();
     declare_biset_and_ouput();
     access_and_iterate_bitset();
+    left_shift();
+    right_shift();
 
     // bitset <16> bits_1 ("00000000");
     // cout << sizeof(bits_1) << endl;
