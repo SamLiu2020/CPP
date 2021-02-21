@@ -20,9 +20,13 @@ void declare_biset_and_ouput(){
 void access_and_iterate_bitset(){
     int x;
     cin >> x;
+
     cout << bitset<8>(x) [3] << endl;
     cout << bitset<16>(x) [0] << endl;
 
+    for (int i=0; i < 8; i++){
+        cout << bitset<8>(x)[i];
+    }
 }
 void left_shift(){
     int a = 5; 
