@@ -1,18 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-    int n; 
+    int n, bids, most_bid; 
     cin >> n;
-    string name;
-    int bid;
+    string name, winner;
     map <string, int> my_map;
     for (int i = 0; i < n; i++){
         cin >> name;
-        cin >> bid;
-        my_map[name] = bid;
+        cin >> bids;
+        my_map[name] = bids;
+        if (my_map[name] > my_map[name]) {
+            int most_bid = my_map[name];
+            winner = name;
+        }
     }
-    for (auto &item : my_map) {
-        cout << item.first << " " << item.second << endl; 
-    }
+    cout << winner << endl;
     return 0;
 }
