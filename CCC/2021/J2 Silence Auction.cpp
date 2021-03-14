@@ -1,16 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 void using_map() {
-    int n, bids, bids_2 = 0;
+    int n, bids, max_bid = 0;
     cin >> n;
     string name, winner;
     map <string, int> my_map;
     for (int i = 0; i < n; i++){
-        cin >> name;
-        cin >> bids;
+        cin >> name >> bids;
         my_map[name] = bids;
-        if (my_map[name] > bids_2) {
-            bids_2 = my_map[name];
+        if (my_map[name] > max_bid) {
+            max_bid = my_map[name];
             winner = name;
         }
     }
@@ -20,12 +19,11 @@ void not_using_map() {
     int n; 
     cin >> n;
     string winner, name;
-    int bid, bid2 = 0;
+    int bid, max_bid = 0;
     for (int i = 0; i < n; i++){
-        cin >> name;
-        cin >> bid;
-        if (bid > bid2) {
-            bid2 = bid;
+        cin >> name >> bid;
+        if (bid > max_bid) {
+            max_bid = bid;
             winner = name;
         }
     }
