@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-    int n, bids; 
-    int bids_2 = 0;
+    int n, bids, bids_2 = 0;
     cin >> n;
     string name, winner;
     map <string, int> my_map;
