@@ -21,23 +21,11 @@ void stack_while_loop(){
     }
     
 }
-void stack_empty_for_loop(){
-    stack <int> stk;
-    
-    for (int i = 1; i <= 5; i++)
-        stk.push(i);
-    for (int i = 1; i <= 5; i++) {
-        cout << stk.top() << endl;
-        stk.pop();
-    }
-
-}
 
 
 int main() {
     stack_for_loop();
-    stack_empty_while_loop();
-    stack_empty_for_loop();
+    stack_while_loop();
 
     return 0;
 }
