@@ -12,7 +12,7 @@ int main() {
     }
     while (!stk_street.empty()){
         stk_street.pop();
-        if((stk_direction.top() == "R") && (stk_direction.size() != 1)){
+        if ((stk_direction.top() == "R") && (stk_direction.size() != 1)){
             cout << "Turn LEFT onto " << stk_street.top() << " street." << endl;
         } else if ((stk_direction.top() == "L") && (stk_direction.size() != 1)){
             cout << "Turn RIGHT onto " << stk_street.top() << " street." << endl;
