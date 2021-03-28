@@ -14,18 +14,14 @@ int main() {
         stk_street.pop();
         if((stk_direction.top() == "R") && (stk_direction.size() != 1)){
             cout << "Turn LEFT onto " << stk_street.top() << " street." << endl;
-        }
-        if((stk_direction.top() == "L") && (stk_direction.size() != 1)){
+        } else if ((stk_direction.top() == "L") && (stk_direction.size() != 1)){
             cout << "Turn RIGHT onto " << stk_street.top() << " street." << endl;
-        }
-        if((stk_direction.top() == "R") && (stk_direction.size() == 1)){
+        } else if ((stk_direction.top() == "R") && (stk_direction.size() == 1)){
             cout << "Turn LEFT into your HOME." << endl;
-        }
-        if((stk_direction.top() == "L") && (stk_direction.size() == 1)){
+        } else if ((stk_direction.top() == "L") && (stk_direction.size() == 1)){
             cout << "Turn RIGHT into your HOME." << endl;
         }
         stk_direction.pop();
     }
-    
     return 0;
 }
