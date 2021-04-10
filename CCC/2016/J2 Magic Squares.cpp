@@ -14,7 +14,7 @@ int main() {
         }
     }
     
-    if ((rows[0] == [1]) && (rows[1] == columns[2]) && (rows[2] == columns[3]))
+    if ((rows[0] == columns[1]) && (rows[1] == columns[2]) && (rows[2] == columns[3]))
         cout << "magic" << endl;
     else
         cout << "not magic" << endl;
