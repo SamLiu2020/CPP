@@ -8,14 +8,13 @@ int main() {
     };
     cin >> input;
 
-    while (input != endl){
-        if (input == "H"){
-            swap(original_grid[0], original_grid[1]);
-        } 
-        if (input == "V"){
-            swap(original_grid[0][0], original_grid[0][1]);
-            swap(original_grid[1][0], original_grid[1][1]);
-        }
+    if (input == "H"){
+        swap(original_grid[0][0], original_grid[0][1]);
+        swap(original_grid[1][0], original_grid[1][1]);
+    } 
+    if (input == "V"){
+        swap(original_grid[0][0], original_grid[1][0]);
+        swap(original_grid[0][1], original_grid[1][1]);
     }
 
     cout << original_grid[0][0] << ' ' << original_grid[0][1] << endl;
