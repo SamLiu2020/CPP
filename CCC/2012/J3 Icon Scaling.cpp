@@ -32,8 +32,8 @@ void func1() {
 }
 
 void func2() {
-    int k;
-    cin >> k;
+    int scale;
+    cin >> scale;
 
     char arr_2d[3][3] = {
         {'*','x','*'},
@@ -41,11 +41,11 @@ void func2() {
         {'*',' ','*'}
     };
 
-    for (int rows = 0; rows < 3; rows++){
-        for (int i = 0; i < k; i++) {
+    for (int row = 0; row < 3; row++){
+        for (int i = 0; i < scale; i++) {
             for (int column = 0; column < 3; column++){
-                for (int j = 0; j < k; j++){
-                    cout << arr_2d[rows][column];
+                for (int j = 0; j < scale; j++){
+                    cout << arr_2d[row][column];
                 }
             }
         cout << endl;               
