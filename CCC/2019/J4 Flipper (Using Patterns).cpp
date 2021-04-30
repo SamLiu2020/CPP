@@ -17,11 +17,11 @@ int main() {
         }
     } 
 
-    if (v % 2 == 1){
+    if (v % 2){
         swap(original_grid[0][0], original_grid[0][1]);
         swap(original_grid[1][0], original_grid[1][1]);
     } 
-    if (h % 2 == 1){
+    if (h % 2){
         swap(original_grid[0][0], original_grid[1][0]);
         swap(original_grid[0][1], original_grid[1][1]);
     } 
