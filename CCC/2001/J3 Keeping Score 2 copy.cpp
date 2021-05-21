@@ -5,9 +5,6 @@ int main() {
     cin >> input;
     int clubs_points = 0, diamonds_points = 0, hearts_points = 0, spades_points = 0, suit;
     queue <char> clubs, diamonds, hearts, spades;
-    // int suit: 1: Club, 2: Diamond, 3: Harts, 4, Spacde
-    // chat  suit: 'C': Club, 'D': Diamond, 'H': Harts, 'S', Spacde
-
     
     for (int i = 0; i < int(input.size()); i++) {
         if (input[i] == 'C')
@@ -72,6 +69,54 @@ int main() {
             }
         }
     }
+
+    if (clubs.front() == '0')
+        clubs.pop();
+        if (clubs.empty()){
+            clubs_points += 3;
+        }
+    if (diamonds.front() == '0')
+        diamonds.pop();
+        if (diamonds.empty()){
+            diamonds_points += 3;
+        }  
+    if (hearts.front() == '0')
+        hearts.pop();
+        if (hearts.empty()){
+            hearts_points += 3;
+        }
+    if (spades.front() == '0')
+        spades.pop();
+        if (spades.empty()){
+            spades_points += 3;
+        }
+
+    if (clubs.front() != '0' && clubs.size() == 1){
+        clubs_points += 2;
+    }
+    if (diamonds.front() != '0' && diamonds.size() == 1){
+        diamonds_points += 2;
+    }
+    if (hearts.front() != '0' && hearts.size() == 1){
+        hearts_points += 2;
+    }
+    if (spades.front() != '0' && spades.size() == 1){
+        spades_points += 2;
+    }
+
+    if (clubs.size() == 2){
+        clubs_points += 1;
+    }
+    if (diamonds.size() == 2){
+        diamonds_points += 1;
+    }
+    if (hearts.size() == 2){
+        hearts_points += 1;
+    }
+    if (spades.size() == 2){
+        spades_points += 1;
+    }
+
     cout << "Cards Dealt " << "Points" << endl;
     cout << "Clubs ";
     while(!clubs.empty()){
