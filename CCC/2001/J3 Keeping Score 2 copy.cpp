@@ -70,26 +70,30 @@ int main() {
         }
     }
 
-    if (clubs.front() == '0')
+    if (clubs.front() == '0'){
         clubs.pop();
         if (clubs.empty()){
             clubs_points += 3;
         }
-    if (diamonds.front() == '0')
+    }
+    if (diamonds.front() == '0'){
         diamonds.pop();
         if (diamonds.empty()){
             diamonds_points += 3;
-        }  
-    if (hearts.front() == '0')
+        }
+    }
+    if (hearts.front() == '0'){
         hearts.pop();
         if (hearts.empty()){
             hearts_points += 3;
         }
-    if (spades.front() == '0')
+    }
+    if (spades.front() == '0'){
         spades.pop();
         if (spades.empty()){
             spades_points += 3;
         }
+    }
 
     if (clubs.front() != '0' && clubs.size() == 1){
         clubs_points += 2;
