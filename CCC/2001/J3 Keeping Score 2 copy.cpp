@@ -70,29 +70,17 @@ int main() {
         }
     }
 
-    if (clubs.front() == '0'){
-        clubs.pop();
-        if (clubs.empty()){
-            clubs_points += 3;
-        }
+    if (clubs.size() == 0){
+        clubs_points += 3;
     }
-    if (diamonds.front() == '0'){
-        diamonds.pop();
-        if (diamonds.empty()){
-            diamonds_points += 3;
-        }
+    if (diamonds.size() == 0){
+        diamonds_points += 3;
     }
-    if (hearts.front() == '0'){
-        hearts.pop();
-        if (hearts.empty()){
-            hearts_points += 3;
-        }
+    if (hearts.size() == 0){
+        hearts_points += 3;
     }
-    if (spades.front() == '0'){
-        spades.pop();
-        if (spades.empty()){
-            spades_points += 3;
-        }
+    if (spades.size() == 0){
+        spades_points += 3;
     }
 
     if (clubs.front() != '0' && clubs.size() == 1){
