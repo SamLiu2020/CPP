@@ -2,26 +2,26 @@
 using namespace std;
 int main() {
     vector <char> vect = {'A', 'B', 'C', 'D', 'E'};
-    
-    int button;
-    cin >> button;
+    int b, n;
 
-    for (int i = 0; i < int(button.size()); i++){
-        if (button == 1){
-            swap(button[0], button[4]);
-        } else if (button == 2){
-            swap(button[4], button[0]);
-        } else if (button == 3){
-            swap(button[0], button[1]);
-        } else if (button == 4){
-            break;
+    while (b != 4){
+        cin >> b >> n;
+        for (int i = 0; i < n; i++){
+            if (b == 1){
+                swap(vect[0], vect[4]);
+                swap(vect[0], vect[3]);
+                swap(vect[0], vect[2]);
+                swap(vect[0], vect[1]);
+            } else if (b == 2){
+                swap(vect[4], vect[0]);
+                swap(vect[4], vect[1]);
+                swap(vect[4], vect[2]);
+                swap(vect[4], vect[3]);
+            } else if (b == 3)
+                swap(vect[0], vect[1]);
         }
-        
     }
-    one use swap one use vector
-    for (int i = 0; i < vect.size(); i++) {
-        cout << vect[i] << endl;
+    for (int i = 0; i < 5; i++){
+        cout << vect[i] << " ";
     }
-
-    return 0;
 }
