@@ -3,7 +3,7 @@ using namespace std;
 void convert_decimal_to_binary(){
     int x;
     cin >> x;
-    cout << bitset<8>(x) << endl;
+    cout << bitset<12>(x) << endl;
 }
 void convert_bitset_to_string(){
     int x;
